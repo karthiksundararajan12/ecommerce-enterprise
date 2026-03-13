@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+
+
+@theme {
+  --color-primary: #ff5252;
+  --color-background: #f5f0f0;
+}
+
+
+
+
+body {
+  font-family: var(--font-inter);
+  background-color: var(--color-background);
+}
+
+::-webkit-scrollbar {
+  width: 5px !important;
+  height: 5px !important;
+}
+
+.container {
+  width: '95%';
+  margin: auto;
+}
+
+p {
+  /* This uses the Montserrat font variable we loaded in layout.tsx */
+  font-family: var(--font-montserrat);
+
+}
+
+.link:hover {
+  color: var(--color-primary)
+}
+
+.MuiBadge-badge {
+  background-color: var(--color-primary) !important;
+}
+
+.nav li:hover .sub_menu {
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.nav li:hover .sub_menu {
+  opacity: 1;
+  visibility: inherit;
+}
+
+/* Customizing react-multi-carousel arrows */
+.react-multiple-carousel__arrow {
+  background: white !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  min-width: 40px !important;
+  min-height: 40px !important;
+  border: 1px solid #f3f4f6 !important;
+}
+
+.react-multiple-carousel__arrow:hover::after {
+  color: #FFF !important;
+}
+
+.react-multiple-carousel__arrow::before {
+  color: #1f2937 !important;
+  /* Dark Gray Arrow */
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
+
+.react-multiple-carousel__arrow--left {
+  left: 18px !important;
+}
+
+.react-multiple-carousel__arrow--left:hover {
+  background-color: #ff5722 !important;
+
+}
+
+
+
+.react-multiple-carousel__arrow--right {
+  right: 18px !important;
+}
+
+.item:hover .img {
+  transform: scale(1.1);
+}
+
+.MuiTabs-indicator {
+  background-color: #ff5722 !important;
+}
+
+.MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected {
+  color: #ff5722 !important;
+}
